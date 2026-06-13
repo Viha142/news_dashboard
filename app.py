@@ -97,7 +97,7 @@ def get_domain(url: str) -> str:
 @st.cache_data(ttl=600, show_spinner=False)
 def fetch_news(api_key: str, params: dict) -> dict:
     """
-    Fetches news from NewsAPI.
+    Fetches news from NEWSAPI_KEY.
 
     Caching prevents burning through the free API quota on every Streamlit rerun.
     """
